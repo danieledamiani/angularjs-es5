@@ -4,8 +4,10 @@ module.exports = function(config) {
   config.set({
     basePath: '../..',
     files: [
-      { pattern: __dirname + '/node_modules/angular/angular.js', watched: false },
-      __dirname + '/src/index.spec.js'
+      __dirname + '/node_modules/angular/angular.js',
+      __dirname + '/node_modules/angular-mocks/angular-mocks.js',
+      __dirname + '/src/*.js',
+      __dirname + '/src/app/**/*.js'
     ],
     frameworks: ['jasmine'],
     browsers: ['Chrome']
