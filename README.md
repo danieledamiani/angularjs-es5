@@ -4,8 +4,14 @@ How to structure a simple webapp using AngularJS, using ES5 and Jasmine
 
 ## Getting Started
 
-TBD
+npm install
 
 ### Prerequisites
 
-TBD
+nodeJs 6+
+
+### Commands
+
+npm test - runs the test
+
+there are no other commands as this app is supposed to be a simple playground
