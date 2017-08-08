@@ -5,7 +5,7 @@ app.service('Events', function(Clicks) {
     var times = [];
 
     for(var i = 0; i < events.length; i++) {
-      times.push(events[i].timeStamp);
+      times.push(Math.floor(events[i].timeStamp));
     }
     return times;
   }

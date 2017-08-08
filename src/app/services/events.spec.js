@@ -11,9 +11,9 @@ describe('Event service', function() {
       });
 
       fakeGetEvents.and.returnValue([
-        {someData: 'abc', timeStamp: 10},  
-        {someData: 'abc', timeStamp: 20},  
-        {someData: 'abc', timeStamp: 30}
+        {someData: 'abc', timeStamp: 10.30},  
+        {someData: 'abc', timeStamp: 20.45},  
+        {someData: 'abc', timeStamp: 30.99}
       ]);
     });
 
