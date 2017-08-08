@@ -1,9 +1,11 @@
 var app = angular.module('app');
 
 app.factory('Clicks', function() {
-  var numberOfClicks = 0;
+  var numberOfClicks = 0,
+    events = [];
   
-  function addClick() {
+  function addClick(evt) {
+    events.push(evt);
     numberOfClicks++;
   }
 
@@ -11,8 +13,13 @@ app.factory('Clicks', function() {
     return numberOfClicks;
   }
   
+  function getEvents() {
+    return events;
+  }
+
   return {
     addClick: addClick,
-    getClicks: getClicks
+    getClicks: getClicks,
+    getEvents: getEvents
   }
 });

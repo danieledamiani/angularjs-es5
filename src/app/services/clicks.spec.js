@@ -19,5 +19,15 @@ describe('Clicks service', function() {
     __Clicks__.addClick();
     expect(__Clicks__.getClicks()).toEqual(1);
   });
+  
+  it('should return all the events', function() {
+    expect(__Clicks__.getEvents()).toEqual([]);
+    var event = {
+      title: 'some event'
+    };
+
+    __Clicks__.addClick(event);
+    expect(__Clicks__.getEvents()).toEqual([{title: 'some event'}]);
+  });
 
 });
