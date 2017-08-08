@@ -22,12 +22,12 @@ describe('titleApp', function() {
   }));
 
   it('should be defined', function() {
-    var title = element.find('h1');
+    var title = element.find('span');
     expect(title).toBeDefined();
   });
   
   it('should have a text value', function() {
-    var title = element.find('h1');
+    var title = element.find('span');
     expect(title.text()).toEqual('Number of clicks so far: ' + numberOfClicks);
   });
 
